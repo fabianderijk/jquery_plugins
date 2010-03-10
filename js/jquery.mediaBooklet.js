@@ -26,7 +26,7 @@
 			 * 	nextClass: The class of the div where the next button is in, defaults to .next
 			 * 	activeClass: The class added to the shown item, defaults to active
 			 * 	autoStart: Wether or not to start the mediaBooklet on page load and automatically slide an item on the number of miliseconds sepcified in showTime
-			 * 	effect: The effect type used to show/hide a news item, defaults to slid, other options: fade
+			 * 	effect: The effect type used to show/hide a news item, defaults to slide, other options: fade
 			 */
 
 			var defaults = {
