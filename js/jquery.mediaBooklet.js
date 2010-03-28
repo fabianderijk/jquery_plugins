@@ -62,9 +62,15 @@
 					if(options.orientation != 'horizontal') {
 						$(options.navClass).addClass('vertical');
 					}
-					$(options.prevClass).live('click', goPrev);
-					$(options.nextClass).live('click', goNext);
-					$(options.pagerItemClass).live('click', goPager);
+					if($(options.prevClass).length) {
+						$(options.prevClass).live('click', goPrev);
+					}
+					if($(options.nextClass).length) {
+						$(options.nextClass).live('click', goNext);
+					}
+					if($(options.pagerItemClass).length) {
+						$(options.pagerItemClass).live('click', goPager);
+					}
 					firstChild.addClass(options.activeClass);
 					
 					childContainer.children(options.itemType).each(function() {
